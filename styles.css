@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*note for remove all spaces*/
+}
+
+html{
+    font-size: 50%;      /*for the html file whole document changes */
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "poppins", sans-serif;  /* type for font and a fall back plan for the font*/
+}
+
+h1{
+    font-size: 2.6rem;  /*font size measure using rem called root em. also em and px*/
+}
+h2{
+    font-size: 4.8rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+h4, h5{
+    font-size: 2.8rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+button:hover{
+    background: #27394e;
+    cursor: pointer;
+}
+li, label input, p{
+    font-size: 2rem;
+}
+
+/*Header section*/
+
+header{
+    background: #131c27;
+    color: white;
+    box-shadow: 11px 10px 12px -6px rgba(241, 239, 239, 0.55);
+    position: sticky;
+    top: 0;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 40rem;
+    /* transition: 0.8s; */
+}
+nav h1{
+    flex: 2 1 40rem;
+    font-family: "pattaya", sans-serif;
+    font-weight: 400;
+}
+nav li a{
+    color: white;
+    transition: font-size 0.4s ease-in-out;
+}
+nav li a:hover{
+    font-size: 2.5rem;
+}
+nav li:hover{
+    background-color: darkgray;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+/* Hero section */
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent),url("images/landing-page.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero h3{
+    margin: 3rem;
+    text-align: center;
+}
+ /* location section */
+
+ .locations{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent),url("images/wild.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+ }
+ .locations div{
+    width: 90%;
+    margin: auto;
+ }
+
+ .locations h2{
+    padding: 1rem;
+    text-decoration: underline;
+ }
+ .locations h3{
+    padding: 4rem 0;
+    /* insert a linear color to the text */
+    background: #A64260;
+    background: linear-gradient(to bottom left, #A64260 14%, #6BFF6B 45%, #FF5447 50%, #FFFFFF 75%, #2C13CF 83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ .benefits .heading{
+    background: #343c44;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;flex-direction: column;
+    justify-content: center;
+ }
+
+ .cards{
+    min-height: 70vh;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+ .card{
+    text-align: center;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ .card img{
+    max-width: 20%;
+    margin: 2rem;
+ }
+
+ .card-icon{
+    background-color: #27394e;
+    text-align: center;
+ }
+ /* form part-section */
+
+ .contact{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent),url("images/new-york-city.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .form-wrapper{
+    background: rgba(19,28,39,0.4);
+    width: 40%;
+    color: white;
+    border-radius: 20px;
+ }
+ .form-wrapper input{
+    padding: 1rem 2rem;
+    border: none;
+    border-bottom: 1px solid red;
+    background: transparent;
+    color: #FFFFFF;
+    width: 70%;
+    transition: width 0.4s ease-in-out;
+
+ }
+ .form-wrapper input:focus{
+    /* border: none; */
+    outline: none;
+    border-color: #6BFF6B;
+    width: 100%;
+ }
+
+ .form-wrapper h2{
+    text-align: center;
+    padding: 3rem;
+ }
+
+ .form-input{
+    padding: 3rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+    margin: auto;
+ }
+
+ .form-input label{
+    /* margin: 0.5rem 3rem; */
+
+ }
+
+ .form-wrapper button{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 6rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+ }
+
+ .form-wrapper input{
+    padding: 1rem 2rem;
+ }
+
+ /* footer */
+ footer{
+    color: white;
+    background: #131c27;
+ }
+ .footer-wrapper{
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center; /*vertically center*/
+    flex-wrap: wrap;
+ }
+ .footer-wrapper img{
+    width: 2rem;
+    height: 2rem;
+ }
+ .footer-wrapper h5{
+    flex:1 1 40rem; /* find flex grow and flex-shrink / min-width*/
+ }
+ .footer-wrapper ul{
+    list-style: none;
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ /* media querries */
+ @media screen and (max-width: 768px) {
+    html{
+        font-size: 40%;
+    }
+    .main-header h1{
+        text-align: center;
+    }
+    .form-wrapper{
+        width: 95%;
+    }
+    footer h5{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    /* nav{
+        flex-direction: column;
+    } */
+    .form-input{
+        width: 75%;
+    }
+ }
